@@ -1,0 +1,30 @@
+<div class="row section featured topspace">
+			<h2 class="section-title"><span>Williams Roster 2014-2015</span></h2>
+			<div class="row">
+				<table class='table'>
+
+				<% header = params[:roster][0] %>
+					<tr>
+						<th><%= header[0]%></th>
+						<th><%= header[1]%></th>
+						<th><%= header[2]%></th>
+						<th><%= header[3]%></th>
+						<th><%= header[4]%></th>
+					</tr>
+
+				<% params[:roster].shift %>
+
+				<% for player in params[:roster] %>
+					<a href="/bio/<%= player[1] %>"><tr class='hover-row'>
+						<td><%= player[0]%></td>
+						<td><%= player[1]%></td>
+						<td><%= player[2]%></td>
+						<td><%= player[3]%></td>
+						<td><%= player[4]%></td>
+					</tr></a>
+				<% end %>
+
+				</table>
+			</div>
+				
+		</div> <!-- / section -->

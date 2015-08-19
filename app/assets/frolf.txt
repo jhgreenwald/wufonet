@@ -1,0 +1,162 @@
+[
+	{ 	"name":"Paresky Pole",
+		"start":"Between the second and third columns on Chapin Steps.",
+		"goal":"Hit any part of the flag pole on Paresky Lawn.",
+		"notes":"Your first throw must be upside down."
+	},
+
+	{	"name":"Frosh Quad",
+		"start":"Next to the entrance of Sage A.",
+		"goal":"Through the no parking sign across the quad and past Willy A.",
+		"notes":"Watch out for road penalties and pedestrians."
+	},
+
+	{ 	"name":"The Granite Bench",
+		"start":"The back paving slab with the manhole in front of Willy A.",
+		"goal":"Resting on the stone bench at the top of Mission Hill near Park Street.",
+		"notes":"IO backhand is the way to go."
+	},
+
+	{ 	"name":"Haystack Monument.",
+		"start":"Behind the bench.",
+		"goal":"Hit the globe on top of the Haystack Monument.",
+		"notes":"Pro tip: lay up."
+	},
+
+	{ 	"name":"Lehman Door",
+		"start":"Behind the Haystack monument.",
+		"goal":"Hit the door to Lehman basement on the left side of Lehman.",
+		"notes":"Hammers win games."
+	},
+
+	{ 	"name":"Hubbell",
+		"start":"The porch next to Hollander.",
+		"goal":"Through the legs of the parking sign on Hubbell lawn.",
+		"notes":"Make sure to clear the parking lot at the beginning."
+	},
+
+	{ 	"name":"Doorstep",
+		"start":"The driveway outside Hubbell between the tree and the volleyball net.",
+		"goal":"Resting on the doorstep of Sewall.",
+		"notes":"Don't hit the windows of Dodd."
+	},
+
+	{ 	"name":"Fire Hydrant",
+		"start":"Path next to Kellogg",
+		"goal":"Fire hydrant on the hill.",
+		"notes":"Always go fo the hole in one."
+    },
+
+	{ 	"name":"Thompson Door",
+		"start":"Path above fire hydrant.  Throw level with the hydrant.",
+		"goal":"The far door of Thompson.",
+		"notes":"Definitely don't hit the security vans."
+    },
+
+	{ 	"name":"Griffin Bench",
+		"start":"The triangular paving slab by the northeast corner of Thompson Chapel.",
+		"goal":"Resting on the wooden bench in front of Griffin.",
+		"notes":"Make sure you don't get stuck below the railing."
+	},
+
+	{ 	"name":"Observatory",
+		"start":"The paving slab next to the Griffin bench.",
+		"goal":"The top or stem of the sundial in front of the observatory.",
+		"notes":""
+	},
+
+
+	{ 	"name":"Prospect Bench",
+		"start":"",
+		"goal":"",
+		"notes":""
+	},
+
+	{ 	"name":"Driscoll",
+		"start":"",
+		"goal":"",
+		"notes":""
+	},
+
+	{ 	"name":"Fieldhouse",
+		"start":"",
+		"goal":"",
+		"notes":""
+	},
+
+	{ 	"name":"WCMA",
+		"start":"",
+		"goal":"",
+		"notes":""
+	},
+
+	{ 	"name":"The Eyes",
+		"start":"",
+		"goal":"",
+		"notes":""
+	},
+
+	{ 	"name":"Security",
+		"start":"",
+		"goal":"",
+		"notes":""
+	},
+
+	{ 	"name":"Hopkins Arch",
+		"start":"",
+		"goal":"",
+		"notes":""
+	},
+	
+	{
+	 	"name":"The Island",
+		"start":"",
+		"goal":"",
+		"notes":""
+	},
+
+	{ 	"name":"The Octagon",
+		"start":"",
+		"goal":"",
+		"notes":""
+	},
+
+	{ 	"name":"Sundial",
+		"start":"",
+		"goal":"",
+		"notes":""
+	},
+
+	{ 	"name":"Bronfman Bench",
+		"start":"",
+		"goal":"",
+		"notes":""
+	},
+
+	{ 	"name":"Clark Bench",
+		"start":"",
+		"goal":"",
+		"notes":""
+	},
+
+	{ 	"name":"Mailbox",
+		"start":"",
+		"goal":"",
+		"notes":""
+	},
+
+	{ 	"name":"JRC",
+		"start":"",
+		"goal":"",
+		"notes":""
+	},
+
+	{ 	"name":"The Grill",
+		"start":"",
+		"goal":"",
+		"notes":""
+	}
+
+
+
+]

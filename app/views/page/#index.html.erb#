@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Conor Dowling">
+	
+	<title>Williams Ultimate</title>
+
+	<link rel="shortcut icon" href="images/gt_favicon.png">
+	
+	<!-- Bootstrap -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icons -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<%= stylesheet_link_tag "initio_styles" %>
+	<!--<link rel="stylesheet" href="app/assets/stylesheets/styles.css"> -->
+
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+</head>
+<body class="home">
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="2">
+		<h1 id="logo" class="text-center">
+			<img class="img-circle" src=<%= asset_path "guy.jpg"%> alt="">
+			<span class="title strokeme">Williams Ultimate</span>
+			<span class="strokeme tagline"></span>
+		</h1>
+	</div>
+
+	<nav class="navbar navbar-default navbar-sticky">
+		<div class="container-fluid">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+			
+			<div class="navbar-collapse collapse">
+				
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="">Home</a></li>
+					<li><a href="/history">History</a></li>
+					<li><a href="/roster">Roster</a></li>
+					<li><a href="/news">News</a></li>
+					<li><a href="/frolf">Frolf</a></li>
+					<li><a href="/bufo">Bufo</a></li>
+				</ul>
+			
+			</div><!--/.nav-collapse -->			
+		</div>	
+	</nav>
+</header>
+
+<main id="main">
+
+	<div class="container">
+		
+		<div class="row section topspace">
+			<div class="panel panel-cta"><div class="panel-body">
+				<div class="col-lg-8">
+					<center><p>Subscribe to receive the occassional update on the goings-on within the organization.</p></center><br>
+					<%= form_tag("/subscribe", method: "get") do %>
+					  <center><p><%= label_tag(:email, "Email:") %>
+					  <%= text_field_tag(:email) %></p></center>
+				</div>
+				<div class="col-lg-4 text-right">
+					<%= submit_tag("Subscribe", :class => "btn btn-primary btn-log") %>
+					<% end %>
+				</div>
+			</div></div>
+		</div> <!-- /section -->
+		
+		<div class="row section featured topspace">
+			<h2 class="section-title"><span>About Us</span></h2>
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<h3 class="text-center">History</h3>
+					<p>As one of the oldest collegiate Ultimate teams in the nation, Williams Ultimate boasts a rich history mired in tradition.</p>
+					<p class="text-center"><a href="/history" class="btn btn-action">Read more</a></p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h3 class="text-center">Roster</h3>
+					<p>Captained by Llewellyn Smith and Jacob Blau, meet WUFO's 2014-2015 roster.</p>
+					<p class="text-center"><a href="/roster" class="btn btn-action">Read more</a></p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h3 class="text-center">Frolf</h3>
+					<p>Check out our awesome Disc Golf course that takes you through all parts of the Williams Campus.</p>
+					<p class="text-center"><a href="/frolf" class="btn btn-action">Read more</a></p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h3 class="text-center">BUFO</h3>
+					<p>BUFO is the Williams Ultimate B-Team.</p>
+					<p class="text-center"><a href="/bufo" class="btn btn-action">Read more</a></p>
+				</div>
+			</div>
+		</div> <!-- / section -->
+	
+		<div class="row section recentworks topspace">
+			
+			<h2 class="section-title"><span>Latest News</span></h2>
+			
+			<div class="thumbnails recentworks row">
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="/news/article/1">
+						<span class="img">
+							<img src=<%= asset_path "usaulogo.png"%> alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+						<span class="title">The College Series</span>
+					</a>
+					<h4></h4>
+					<p></p>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="">
+						<span class="img">
+							<img src=<%= asset_path "tt2011.jpg"%> alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+						<span class="title">The Internet Never Forgets</span>
+					</a>
+					<h4></h4>
+					<p></p>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="">
+						<span class="img">
+							<img src=<%= asset_path "llew.jpg"%> alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+						<span class="title">The Presidential Candid</span>
+					</a>
+					<h4></h4>
+					<p></p>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="">
+						<span class="img">
+							<img src=<%= asset_path "pv.jpg"%> alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+						<span class="title">Purple Valley 2014</span>
+					</a>
+					<h4></h4>
+					<p></p>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="">
+						<span class="img">
+							<img src=<%= asset_path "montreal.jpg"%> alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+						<span class="title">Montreal: Unleashed and Untrained</span>
+					</a>
+					<h4></h4>
+					<p></p>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="">
+						<span class="img">
+							<img src=<%= asset_path "wildwood.jpg"%> alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+						<span class="title">Wildwood</span>
+					</a>
+					<h4></h4>
+					<p></p>
+				</div>
+			</div>
+
+		</div> <!-- /section -->
+
+		<div "row section topspace">
+		<div class='col-sm-6'>
+		<center><a class="twitter-timeline" href="https://twitter.com/wufoultimate" data-widget-id="544943862008274946">Tweets by @wufoultimate</a></center>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+		<div class='col-sm-6'>
+			<h2 class="section-title"><span>Filler</span></h2>
+			<p> I don't know what you want to put here but we need some text next to the twitter feed just so the layout doesn't look bad. Could be info about our practice schedule or another feed of some sort. Action shots might be a good idea.</p>
+		</div>
+
+	</div>	<!-- /container -->
+
+	
+
+</main>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Contact</h3>
+				<div class="widget-body">
+					<p>Hartley Greenwald<br>
+						<a href="mailto:#">wufoultimate@gmail.com</a><br>
+						<br>
+						63 North Street, Williamstown, MA 01267
+					</p>	
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Follow us</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+						<a href="twitter.com/wufoultimate"><i class="fa fa-twitter fa-2"></i></a>
+						<a href=""><i class="fa fa-dribbble fa-2"></i></a>
+						<a href=""><i class="fa fa-github fa-2"></i></a>
+						<a href=""><i class="fa fa-facebook fa-2"></i></a>
+					</p>
+				</div>
+			</div>
+
+			<!--<div class="col-md-3 widget">
+				<h3 class="widget-title">Text widget</h3>
+				<div class="widget-body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Form widget</h3>
+				<div class="widget-body">
+					<p>+234 23 9873237<br>
+						<a href="mailto:#">some.email@somewhere.com</a><br>
+						<br>
+						234 Hidden Pond Road, Ashland City, TN 37015
+					</p>	
+				</div>
+			</div>-->
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+<footer id="underfooter">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p></p>
+				</div>
+			</div>
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p class="text-right">
+						Copyright &copy; 2014, Conor Dowling<br> 
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/javascripts/template.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,79 @@
+<main id="main">
+
+  <div class="container">
+
+    <div class="row topspace">
+
+      <!-- Sidebar -->
+      <aside class="col-md-4 sidebar sidebar-left">
+      	<div class="row widget">
+          <div class="col-xs-12">
+            <h4>About us</h4>
+            <p>Small blurb about the team that doesn't take up too much space so the officers still fit before the roster ends.</p>
+          </div>
+        </div>
+
+        <div class="row widget">
+          <div class="col-xs-12">
+            <h5>President</h5>
+            <p>Hartley Greenwald</p>
+          </div>
+          <div class="col-xs-12">
+            <h5>Captains</h5>
+            <p>Doug Wassarman<br>Emmett Blau</p>
+          </div>
+          <div class="col-xs-12">
+            <h5>Treasurer</h5>
+            <p>Jeffrey Sload</p>
+          </div>
+          <div class="col-xs-12">
+            <h5>Logistical Officer</h5>
+            <p>Noah Betz-Richman</p>
+          </div>
+          <div class="col-xs-12">
+            <h5>Scribe</h5>
+            <p>Patrick Gerald</p>
+          </div>
+        </div>
+        
+
+      </aside>      <!-- /Sidebar -->
+
+      <article class="col-sm-8 maincontent">
+
+
+		<div class="row section featured topspace">
+			<h2 class="section-title"><span>Williams Roster 2014-2015</span></h2>
+			<div class="row">
+				<div class="">
+				<table class='table table-hover' style="margin:20px">
+
+				<% header = params[:roster][0] %>
+					<tr>
+						<th><%= header[0]%></th>
+						<th><%= header[1]%></th>
+						<th><%= header[2]%></th>
+						<th><%= header[3]%></th>
+					</tr>
+
+				<% params[:roster].shift %>
+
+				<% for player in params[:roster] %>
+					<a href="/bio/<%= player[1] %>"><tr class='hover-row'>
+						<td><%= player[0]%></td>
+						<td><%= player[1]%></td>
+						<td><%= player[2]%></td>
+						<td><%= player[3]%></td>
+					</tr></a>
+				<% end %>
+
+				</table>
+				</div>
+			</div>
+						
+		</div> <!-- / section -->
+
+	</article>
+    </div>
+  </div>
+</main>

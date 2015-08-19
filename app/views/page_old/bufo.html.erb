@@ -1,0 +1,18 @@
+<div style='padding:10px'>
+<h1>WUFO Roster 2013</h1>
+
+<table class='table'>
+
+<% for player in params[:roster] %>
+	<tr class='hover-row'>
+		<td><%= player[0]%></td>
+		<td><%= player[1]%></td>
+		<td><%= player[2]%></td>
+		<td><%= player[3]%></td>
+		<td><%= player[4]%></td>
+	</tr>
+<% end %>
+
+</table>
+
+</div>

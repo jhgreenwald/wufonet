@@ -1,0 +1,15 @@
+<iframe width="550" height="400" frameborder="0" src="//widgets.scribblemaps.com/sm/?d=true&z=true&l=true&mc=true&lat=42.713466361927686&lng=-73.20374616856577&vz=17&type=satellite&width=550&height=400&id=frolf" style="border:0" allowfullscreen></iframe>
+
+<% num = 1 %>
+<% for hole in params[:holes] %>
+
+<div>
+	<h3><%= num %>: <%= hole["name"] %></h3>
+	<p><b>Start:</b> <%= hole["start"]%></p>
+	<p><b>Goal:</b> <%= hole["goal"]%></p>
+	<p><b>Notes:</b> <%= hole["notes"]%></p>
+</div>
+
+<% num = num + 1 %>
+
+<%end%>
